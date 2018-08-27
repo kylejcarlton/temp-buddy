@@ -6,7 +6,7 @@ $(document).ready(function(){
         if(result.values[5][1] == "unknown"){
             $("#bat").html("&nbsp;" + result.values[4][1] + "%" + " - Battery Discharging");
         }
-        else if(result.values[5][1] == "VIN"){
+        else if(result.values[5][1] == "VIN" || "USB host"){
             $("#bat").html("&nbsp;" + result.values[4][1] + "%" + " - Building Power On");
         }
     }});
